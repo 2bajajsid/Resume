@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.3.7)  8 MAR 2020 11:45
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300 64-bit) (preloaded format=xelatex 2020.3.7)  8 MAR 2020 15:55
 entering extended mode
 **./Practice1.tex
 (Practice1.tex
@@ -166,7 +166,16 @@ Package fontspec Info: Font family 'FontAwesome(0)' created for font
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fontawesome\fontawesomesymbols-xeluatex
-.tex")) (Practice1.aux)
+.tex")) ("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen151
+\enit@toks=\toks17
+\enit@inbox=\box47
+\enit@count@id=\count192
+\enitdp@description=\count193
+)
+(Practice1.aux)
 \openout1 = `Practice1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -294,6 +303,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 27.
+
+LaTeX Font Warning: Font shape `TU/FontAwesome(0)/bx/n' undefined
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 29.
+
 [1
 
 ] (Practice1.aux)
@@ -302,12 +315,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 6178 strings out of 414613
- 141001 string characters out of 2911252
- 443115 words of memory out of 3000000
- 23266 multiletter control sequences out of 15000+200000
- 534273 words of font info for 44 fonts, out of 3000000 for 9000
+ 6503 strings out of 414613
+ 146465 string characters out of 2911252
+ 457434 words of memory out of 3000000
+ 23584 multiletter control sequences out of 15000+200000
+ 534297 words of font info for 47 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 51i,5n,62p,234b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,5n,62p,301b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Practice1.pdf (1 page).
