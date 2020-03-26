@@ -2,23 +2,30 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.65in]{geometry}
 \usepackage[dvipsnames]{xcolor} 
 \usepackage{fontawesome}
+\usepackage[semibold]{raleway}
 \usepackage{enumitem}
 
-\titleformat{\section}[runin]
-  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[runin]
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}[runin]
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\titlespacing*{\subsubsection}{0pt}{1.1\baselineskip}{\baselineskip}
 
 \renewcommand{\maketitle}{
-	{\centering {\LARGE  \fontfamily{ptm}\fontseries{m}\selectfont Sid Bajaj} \par}
-	{\centering {\normalsize {\textcolor{Plum}{Front-End Developer -- React JS -- Angular JS}}} \par}
+	{\centering {\Huge  {\textcolor{Plum} {\fontfamily{ptm}\fontseries{m}\selectfont Sid Bajaj}}}\par}
+	{\vspace{0.5em}}
 	{\centering  {\small 
 			\faEnvelope {\hspace{0.5em}} sidharth.bajaj@edu.uwaterloo.ca 
 			{\hspace{0.5em}} {$\bullet$} {\hspace{0.5em}}
 			 \faPhone {\hspace{0.5em}} (289) 400-7161 
                          {\hspace{0.5em}} {$\bullet$} {\hspace{0.5em}} 
-			  \faLinkedin {\hspace{0.5em}}  2bajajsid   {\hspace{0.5em}} \faGithub
+			  \faLinkedin {\hspace{0.5em}}  linkedin.com/in/2bajajsid/  {\hspace{0.5em}} 
+			\faGithub {\hspace{0.5em}} github.com/2bajajsid
 			} \par}
 	\hrule
 }
@@ -26,22 +33,32 @@
 \begin{document}
 \maketitle
 
-\section*  {\Large  \faGraduationCap {\hspace{0.5em}} {\textcolor{Plum} {Education}} \hfill {\normalsize Bachelors of Honors Computer Science [2018-23], University of Waterloo }}
-\section*  {\Large \faBriefcase {\hspace{0.5em}} {\textcolor{Plum} {Work Experience}}} 
-	\subsection*{Front-End Developer \hfill {\normalsize Ruby [Jan - April, 2020]}}
+\section*{\Large \faWrench  {\hspace{0.5em}} {\textcolor{Plum} {Summary of Technical Skills}}}
+	\begin{itemize}[label={\color{Plum} \faCaretRight}]
+		\itemsep0em
+	\item \textbf{Programming Languages}: Javascript, Java, Typescript, C++, Go, Python 
+	\item \textbf{Markdown}: HTML5, CSS, SCSS, \LaTeX
+	\item \textbf{Tools}: Git, Bash, JIRA, SQL
+	\item \textbf{Frameworks \& Libraries}: React JS, Angular JS 2.0, Redux, Node JS, Express JS, MongoDB, GinGonic
+	\end{itemize}
+
+\section* {\Large \faBriefcase {\hspace{0.5em}} {\textcolor{Plum} {Work Experience}}} 
+
+	\subsection*{Front-End Developer {\color{Plum} {$\bullet$}}  Ruby \hfill {\normalsize Jan - April, 2020}}
 		\begin{itemize}[label={\color{Plum} \faCaretRight}]
 			\itemsep0em
 			\item Developed Knowledge Base / FAQ section for web application built using React library using Redux for global state management and Redux Sagas for handling async  side effects
-			\item Implemented Accessibility best practices and singlehandedly, got application to meet Level AA Compliance; increased Accessibility scored measured by Lightouse metric by approximately 30\% on each page. 
+			\item Implemented Accessibility best practices and singlehandedly, got application to meet Level AA Compliance with WCAG Guidelines; increased Accessibility scored measured by Lightouse metric by approximately 30\% on each page. 
 			\item Refactored class components to functional components using React 17 Hooks and Context API in Typescript
 		\end{itemize}
-	\subsection*{Software Developer In Test \hfill {\normalsize EllisDon [May - Aug, 2019]}}
+	\subsection*{Software Developer In Test  {\color{Plum} {$\bullet$}} EllisDon \hfill {\normalsize May - Aug, 2019}}
 		\begin{itemize}[label={\color{Plum} \faCaretRight}]
 			\itemsep0em
 			\item Automated 100-150 UI End-to-End test cases using Selenium WebDriver and organized them using Page Object Model Architecture. 
-			\item Automated API unit and integration tests for 3 services using Rest Assured.
+			\item Automated API unit and integration tests for microservices using Rest Assured.
 			\item Engineered integration and unit test suites for services in Golang via Ginkgo testing framework. 
 		\end{itemize}
+
 \section*{\Large \faGears  {\hspace{0.5em}} {\textcolor{Plum} {Relevant Projects}}} 
 		\subsection*{JRental {\small {\color{Plum} JS, Go}}}
 			\begin{itemize}[label={\color{Plum} \faCaretRight}]
@@ -55,7 +72,7 @@
 			\item Developed a 2D multiplayer game, with graphical and text displays, where players take on the role of computer hackers. 
 			\item Made heavy use of software design patterns, such as the observer pattern and the decorator pattern, and idioms such as non-virtual interface , model-view-controller architecture, and pointer to implementation
 			\end{itemize}
-		\subsection*{Magic Match  {\small {\color{Plum} Top 10 Finalists Hack The 6ix | JS, Python}}}
+		\subsection*{Magic Match {\small {\color{Plum} Top 10 Finalists Hack The 6ix | JS, Python}}}
 			\begin{itemize}[label={\color{Plum} \faCaretRight}]
 			\itemsep0em
 			\item Developed front-end and trained model of AI chatbot application that uses NLP [Microsoft's Luis AI] to implement Semantic Analysis on user responses and organize them into suitable hackathon groups with their highest compatibility scores calculated. 
@@ -64,6 +81,8 @@
 			\begin{itemize}[label={\color{Plum} \faCaretRight}]
 			\item Developed publisher and subscriber node programs to retrieve and publish required linear and angular position / velocity data points for arm nodes using Robot Operating System [ROS] middleware. 
 			\end{itemize}
+
+\iffalse 
 \section*{\Large {\textcolor{Plum} {Relevant Courses}}} 
 			\begin{itemize}[label={\color{Plum} \faCaretRight}]
 			\itemsep0em
@@ -72,6 +91,9 @@
 			\item MATH 235 - Linear Algebra 2 {\small {\color{Plum} 87\%}}
 			\item STAT 230 - Probability {\small {\color{Plum} 81\%}}
 			\end{itemize}
-			
+\fi
+
+
+\section*  {\Large  \faGraduationCap {\hspace{0.5em}} {\textcolor{Plum} {Education}} \hfill {\normalsize Bachelors of Honors Computer Science [2018-23], University of Waterloo }}
 
 \end{document}
